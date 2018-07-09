@@ -12406,6 +12406,67 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Feature-Importances">Feature Importances<a class="anchor-link" href="#Feature-Importances">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="importances_cvd1.png"
+     alt="importances_cvd1"
+     style="float: center; margin-center: 10px; width: 650px;" />
+<strong>Figure 11 </strong>. F-score ranked feature importances obtained with optimized model trained on SMOTE oversampled data. The features with the largest scores represent the main important predictors for cardiovascular disease (CVD). In this model, Glucose (LBXSGL), Body mass index (BMI), Age (AGE), Creatinine (LBXSCR), Presenting a cardiovascular disorder (CARDIO_DISORDER), Diagnosed high cholesterol (HIGHCHOL), Cholesterol (LBXSCH), Albumin (LBXSAL), Familial diabetes history (FAMILIAL_DIABETES) and Potassium level (LBXSKSI), are the main ten risk predictors of diabetes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="importances_cvd2.png"
+     alt="importances_cvd2"
+     style="float: center; margin-center: 10px; width: 650px;" />
+<strong>Figure 12 </strong>. F-score ranked feature importances obtained with optimized model for CVD trained on selected features. The features with the largest scores represent the main important predictors for cardiovascular disease (CVD). In this model, Body mass index (BMI), Age (AGE), Uric acid levels (LBXSUA), Creatinine (LBXSCR), Chloride (LBXSCLSI), Cholesterol (LBXSCH), Lactate dehydrogenase (LBXSLDSI), Gamma glutamyl transferase (LBXSGTSI), Blood urea nitrogen (LBXSBU) and Diagnosed high cholesterol (HIGHCHOL), are the main ten risk predictors of CVD. . (For each unique F-score, we can assign an ordinal rank N=1,2,3,.., where N=1 corresponds to the feature of largest importance score; this scheme is used to compare feature ranking in benchmark models).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="importances_cvd3.png"
+     alt="importances_cvd3"
+     style="float: center; margin-center: 10px; width: 650px;" />
+<strong>Figure 13</strong>. F-score ranked feature importances obtained with optimized model trained on SMOTE oversampled data. The features with the largest scores represent the main important predictors for cardiovascular disease (CVD). In this model, Age (AGE), Body mass index (BMI), Diagnosed high cholesterol (HIGHCHOL), Being Hispanic (ETHNICITY_Hispanic), Diagnosed diabetes (DIAGNOSED_DIABETES), Diagnosed onset of high cholesterol (HIGHCHOL_ONSET), Globulin (LBXSGB), Chloride (LBXSCLSI), Income level (INCOME_LEVEL) and Potassium (LBXSKSI) are the main ten risk predictors of CVD. . (For each unique F-score, we can assign an ordinal rank N=1,2,3,.., where N=1 corresponds to the feature of largest importance score; this scheme is used to compare feature ranking in benchmark models).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="importances_cvd4.png"
+     alt="importances_cvd4"
+     style="float: center; margin-center: 10px; width: 650px;" />
+<strong>Figure 14</strong>. F-score ranked feature importances obtained with optimized model trained on SMOTE oversampled selected features. The features with the largest scores represent the main important predictors for cardiovascular disease (CVD). In this model, Age (AGE), Body mass index (BMI), Chloride (LBXSCLSI), Albumin (LBXSAL), Lactate dehydrogenase (LBXSLDSI), Blood urea nitrogen (LBXSBU), Gamma glutamyl transferase (LBXSGTSI), Globulin (LBXSGB), Diagnosed diabetes (DIAGNOSED_DIABETES) and Diagnosed high cholesterol (HIGHCHOL), are the main ten risk predictors of CVD. (For each unique F-score, we can assign an ordinal rank N=1,2,3,.., where N=1 corresponds to the feature of largest importance score; this scheme is used to compare feature ranking in benchmark models).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Diabetes-Risk-Predictor-Features">Diabetes Risk Predictor Features<a class="anchor-link" href="#Diabetes-Risk-Predictor-Features">&#182;</a></h2><p>Below we summarize the dataset features used to train the XGBoost classifier to classify individuals as presenting or not (or dveloping risk) diabetes.</p>
 <p><strong>Number of cases:</strong> 1469</p>
 <p><strong>Target label:</strong> DIAGNOSED_DIABETES</p>
@@ -12432,19 +12493,6 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
      alt="roc_curves_diabetes"
      style="float: center; margin-center: 10px; width: 750px;" />
 <strong>Figure 11 </strong>. ROC curves for each of the implemented XGBoost models targeting Diabetes. Dashed diagonal line corresponds to a non-diagnostic random classifier. The model with best performance metric (red solid line) is the optimized SMOTE model, and has an AUC score of 0.946.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Feature-Importances">Feature Importances<a class="anchor-link" href="#Feature-Importances">&#182;</a></h3><p><img src="importances_cvd1.png"
-     alt="importances_cvd1"
-     style="float: center; margin-center: 10px; width: 650px;" />
-<strong>Figure 11 </strong>. 21 F-score ranked feature importances obtained with optimized model trained on SMOTE oversampled data. The features with the largest scores represent the main important predictors for cardiovascular disease (CVD). In this model, Glucose (LBXSGL), Body mass index (BMI), Age (AGE), Creatinine (LBXSCR), Presenting a cardiovascular disorder (CARDIO_DISORDER), Diagnosed high cholesterol (HIGHCHOL), Cholesterol (LBXSCH), Albumin (LBXSAL), Familial diabetes history (FAMILIAL_DIABETES) and Potassium level (LBXSKSI), are the main ten risk predictors of diabetes.</p>
 
 </div>
 </div>
