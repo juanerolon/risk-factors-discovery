@@ -11779,7 +11779,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Machine-Learning-Approach-to-the-Discovery-of-Disease-Risk-Factors-on-Individuals-Assessed-by-the-National-Health-and-Nutrition-Examination-Surveys-2013-2014">Machine Learning Approach to the Discovery of Disease Risk Factors on Individuals Assessed by the National Health and Nutrition Examination Surveys 2013-2014<a class="anchor-link" href="#Machine-Learning-Approach-to-the-Discovery-of-Disease-Risk-Factors-on-Individuals-Assessed-by-the-National-Health-and-Nutrition-Examination-Surveys-2013-2014">&#182;</a></h1><h3 id="Juan-E.-Rolon">Juan E. Rolon<a class="anchor-link" href="#Juan-E.-Rolon">&#182;</a></h3><p>e-mail: rolon.math@gmail.com</p>
-<p>Original capstone project submitted to Udacity, Inc. as partial fulfillment to obtain the Machine Learning Nanodegree certification</p>
+<p>Original capstone project submitted to Udacity, Inc. as partial fulfillment to obtain the certification as a Machine Learning Engineer.</p>
 
 </div>
 </div>
@@ -12564,8 +12564,8 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Analysis-and-Justification">Analysis and Justification<a class="anchor-link" href="#Analysis-and-Justification">&#182;</a></h1><p>The main points that justify our results is their qualitative agreement with benchmark  results and consistency with well-established clinical criteria regarding cardiovascular disease and diabetes risk factors. We will focus on the consistency of feature importance ranking across models.</p>
-<p>As shown in Figure X, the disease risk predictors obtained by feature selection in our model strongly match those obtained in the benchmark models. For CVD, the features Age, BMI, Smoking, Ethnicity, Cholesterol, Glucose and Triglycerides are the most consistent risk predictors across models.</p>
-<p>For diabetes, the features Age, Cardiovascular disorders, BMI (degree of obesity) and Smoking are the most consistent; (we notice the absence of an equivalent to Glucose (LBXSGL) in the benchmark model, this feature was not studied by M. Alghamdi, et al.)</p>
+<p>As shown in Table 5, the disease risk predictors obtained by feature selection in our model strongly match those obtained in the benchmark models. For CVD, the features Age, BMI, Smoking, Ethnicity, Cholesterol, Glucose and Triglycerides are the most consistent risk predictors across models.</p>
+<p>For diabetes, the features Age, Cardiovascular disorders, BMI (degree of obesity) and Smoking are the most consistent; (we notice the absence of an equivalent to Glucose (LBXSGL) in the benchmark model, this feature was not studied by M. Alghamdi, et al.).</p>
 
 </div>
 </div>
@@ -12588,7 +12588,7 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The table below shows the performance comparison of selected XGBoost classifier models and benchmarks. We compare only the available metrics across models.</p>
+<p>Table 6 below shows the performance comparison of selected XGBoost classifier models and benchmarks. We compare only the available metrics across models.</p>
 <p><img src="table6.png"
      alt="CompareMetrics"
      style="float: center; margin-center: 10px; width: 750px;" />
@@ -12612,7 +12612,7 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><p>As discussed above, we have shown how to utilize a AUC-optimized gradient boosting classifier to obtain important risk predictors for disease using feature importance measures.</p>
+<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><p>We have shown how to utilize a AUC-optimized gradient boosting classifier to obtain important risk predictors for disease using feature importance measures.</p>
 <p>Although, by using a much smaller dataset in comparison to scaled-up models, we have obtained results which are in strong qualitative and semi-quantitative agreement with the benchmarks.</p>
 <p>Our results are also consistent with the clinical literature. This further strengthens the notion that machine learning models can be applied to aid in medical diagnosis by mining healthcare data to discover disease risk predictors.</p>
 <p>The results of this project can be potentially improved by the following:</p>
@@ -12637,7 +12637,16 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Benchmark-Models">Benchmark Models<a class="anchor-link" href="#Benchmark-Models">&#182;</a></h2>
+<h1 id="Bibliography">Bibliography<a class="anchor-link" href="#Bibliography">&#182;</a></h1><p>[1] K. Deepika and S. Shedole, Predictive analytics to prevent and control chronic diseases, 2016 2nd International Conference on Applied and Theoretical Computing and Communication Technology (iCATccT), 381-386. 10.1109/ICATCCT.7912028 (2016). Open Access Preprint</p>
+<p>[2] M.  Chen, Y.  Hao, K.   Hwang, L.   Wang,  Disease  prediction   by  machine  learning over big data from healthcare communities, IEEE Access, 5 (1), 8869-8879 (2017). <a href="https://doi.org/10.1109/ACCESS.2017.2694446">https://doi.org/10.1109/ACCESS.2017.2694446</a></p>
+<p>[3] The International Diabetes Federation. <a href="https://www.idf.org">https://www.idf.org</a>.</p>
+<p>[4] US CDC Division for Heart Disease and Stroke Prevention. <a href="https://www.cdc.gov/dhdsp/data">https://www.cdc.gov/dhdsp/data</a> statistics/index.htm.</p>
+<p>[5] S.F. Weng, J. Reps, J. Kai, J.M. Garibaldi, N. Qureshi, Can machine-learning improve cardiovascular risk prediction using routine clinical data?. PLOS ONE 12(4) e0174944 (2017). <a href="https://doi.org/10.1371/journal.pone.0174944">https://doi.org/10.1371/journal.pone.0174944</a>.</p>
+<p>[6] M. Alghamdi, M. Al-Mallah, S. Keteyian, C. Brawner, J. Ehrman, et al., Predicting diabetes mellitus using SMOTE and ensemble machine learning approach: The Henry Ford Exercise Testing (FIT) project, PLOS ONE  12(7) e0179805  (2017). <a href="https://doi.org/10.1371/journal.pone.0179805">https://doi.org/10.1371/journal.pone.0179805</a>.</p>
+<p>[7] Xgboost (<a href="https://en.wikipedia.org/wiki/Xgboost">https://en.wikipedia.org/wiki/Xgboost</a>); A Gentle Introduction to XGBoost for Applied Machine Learning (<a href="https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning">https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning</a>).</p>
+<p>[8] Gradient Boosting (<a href="https://en.wikipedia.org/wiki/Gradient_boosting">https://en.wikipedia.org/wiki/Gradient_boosting</a>); A Gentle Introduction to the Gradient Boosting Algorithm for Machine Learning (<a href="https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning">https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning</a>).</p>
+<p>[9] Point-biserial correlation coefficient (<a href="https://en.wikipedia.org/wiki/Point-biserial_correlation_coefficient">https://en.wikipedia.org/wiki/Point-biserial_correlation_coefficient</a>).</p>
+
 </div>
 </div>
 </div>
@@ -12646,30 +12655,101 @@ $$ 2 \times \frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Re
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We will benchmark qualitatively and semi-quantitatively our results with recent studies by Weng [5] and Alghamdi [6]. These authors conducted analyses on big clinical datasets and ranked the most important risk factors for developing diabetes and cardiovascular disease using a large cohort of individuals.</p>
+<hr>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Appendix-1:-Data-pre-processing-and-feature-scaling">Appendix 1: Data pre-processing and feature scaling<a class="anchor-link" href="#Appendix-1:-Data-pre-processing-and-feature-scaling">&#182;</a></h2>
+<h2 id="Appendix-1:-Benchmark-Models">Appendix 1: Benchmark Models<a class="anchor-link" href="#Appendix-1:-Benchmark-Models">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our learning algorithms are benchmarked qualitatively and semi-quantitatively with recent algorithms developed by Weng [5] and Alghamdi [6]. These authors conducted analyses on big clinical datasets and ranked the most important risk factors for developing diabetes and cardiovascular disease using a large cohort of individuals.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="benchmark1.png"
+     alt="Benchmark 1"
+     style="float: center; margin-center: 10px; width: 750px;" />
+<strong>Table AP1</strong>. Top 10 risk factor variables for cardiovascular disease algorithms listed in descending order of coefficient effect size.  Algorithms above were derived from training cohort of 295,267 patients.  S.F. Weng, J. Reps, J. Kai, J.M. Garibaldi, N. Qureshi. Can machine-learning improve cardiovascular risk prediction using routine clinical data? PLOS ONE 12(4) e0174944 (2017).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="benchmark2.png"
+     alt="Benchmark 2"
+     style="float: center; margin-center: 10px; width: 750px;" />
+<strong>Table AP2</strong>. Performance of the machine-learning (ML) algorithms predicting 10-year cardiovascular disease (CVD) risk derived from applying training algorithms on the validation cohort of 82,989 patients. S.F. Weng, J. Reps, J. Kai, J.M. Garibaldi, N. Qureshi. Can machine learning improve cardiovascular risk prediction using routine clinical data? PLOS ONE 12(4) e0174944 (2017).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="benchmark3.png"
+     alt="Benchmark 3"
+     style="float: center; margin-center: 10px; width: 750px;" />
+<strong>Table AP3</strong>. Importance Ranking of diabetes predictor features based on their Information Gain (IG) according to M. Alghamdi, M. Al-Mallah, S. Keteyian, C. Brawner, J. Ehrman, et al., Predicting diabetes mellitus using SMOTE and ensemble machine learning approach: The Henry Ford Exercise Testing (FIT) project, PLOS ONE  12(7) e0179805 (2017).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="benchmark4.png"
+     alt="Benchmark 4"
+     style="float: center; margin-center: 10px; width: 750px;" />
+<strong>Figure AP1</strong>. ROC performance of classification models on the imbalance datasets analyzed in the study by M. Alghamdi, M. Al-Mallah, S. Keteyian, C. Brawner, J. Ehrman, et al., Predicting diabetes mellitus using SMOTE and ensemble machine learning approach: The Henry Ford Exercise Testing (FIT) project, PLOS ONE  12(7) e0179805 (2017).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="benchmark5.png"
+     alt="Benchmark 5"
+     style="float: center; margin-center: 10px; width: 850px;" />
+<strong>Table AP3</strong>. Evaluation of the performance of classification models on imbalance dataset, by M. Alghamdi, M. Al-Mallah, S. Keteyian, C. Brawner, J. Ehrman, et al., Predicting diabetes mellitus using SMOTE and ensemble machine learning approach: The Henry Ford Exercise Testing (FIT) project, PLOS ONE  12(7) e0179805 (2017).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Appendix-2:-Data-pre-processing-and-feature-scaling">Appendix 2: Data pre-processing and feature scaling<a class="anchor-link" href="#Appendix-2:-Data-pre-processing-and-feature-scaling">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12777,19 +12857,6 @@ Resultant features: all features in dataset</strong></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
