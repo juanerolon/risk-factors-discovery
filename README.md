@@ -17,7 +17,7 @@ In this project, we train a **gradient boosting classifier** on publicly availab
 
 ### License
 
-The present project constitutes original intellectual work licensed by GNU GPLv3. You are free to read and adapt the application to your needs provided you do not make exact copies of excerpts of this work as part of your reporting or product development. Any inquiries and suggestions for improvement are warmly welcomed. Please write to ```rolon.math@gmail.com```. 
+The present project constitutes original intellectual work licensed by GNU GPLv3. You are free to read and adapt the application to your needs provided you do not make exact copies of excerpts of this work as part of your reporting or product development. Any inquiries and suggestions for improvement are warmly welcomed.
 
 ### Usage
 
