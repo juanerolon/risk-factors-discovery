@@ -6,7 +6,6 @@
 # Machine Learning Approach to the Discovery of Disease Risk Factors on Individuals Assessed by the National Health and Nutrition Examination Surveys 2013-2014
 
 ### Juan E. Rolon
-e-mail: rolon.math@gmail.com
 
 Original capstone project submitted to Udacity, Inc. as partial fulfillment to obtain the certification as a Machine Learning Engineer. 
 
