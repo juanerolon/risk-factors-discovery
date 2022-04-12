@@ -7,8 +7,6 @@
 
 ### Juan E. Rolon
 
-Original capstone project submitted to Udacity, Inc. as partial fulfillment to obtain the certification as a Machine Learning Engineer. 
-
 ## Project Overview
 
 The prediction of chronic disease risk factors is one of the most important and challenging problems in healthcare analytics. Accurate risk factor prediction helps developing strategies aimed at avoiding unnecessary interventions for patients and reducing costs for insurance companies and healthcare providers.
