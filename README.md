@@ -3,7 +3,7 @@
      alt="FeaturesTable"
      style="float: center; margin-center: 10px; width: 650px;" />
 
-# Machine Learning Approach to the Discovery of Disease Risk Factors on Individuals Assessed by the National Health and Nutrition Examination Surveys 2013-2014
+# Machine Learning Approach to the Discovery of Disease Risk Factors on Individuals Assessed by the National Health and Nutrition Examination Surveys
 
 ### Juan E. Rolon
 
